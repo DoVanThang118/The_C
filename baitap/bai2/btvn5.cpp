@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <iostream>
 int main(){
 	printf("ngay:");
 	int ngay;
@@ -9,8 +8,6 @@ int main(){
 	scanf("%d",&thang);
 	if(ngay>=1&&ngay<=31){
 		if(thang>=1&&thang<=12){
-			int tongsongaytrongthang(int ngay,int thang){
-				int tong;
 				switch(thang){
 				case 1:
 				case 3:
@@ -31,21 +28,12 @@ int main(){
 					ngay = 28;
 					break;
 				}
-			return tong	;
-			}
+			return ngay	;
+			printf("gia tri hop le");
 		}else{
 			printf("khong hop le");
 		}
-	} else{
+	}else{
 		printf("khong hop le");
 			}
-	int day_of_year(int ngay,int thang);{
-	   int songay = ngay;
-	   scanf("%d",&songay);
-	   for(int i =1; i <= thang - 1; i++){
-		   songay += tongsongaytrongthang(i);
-	    }
-	return songay;
-    } 
-    
 }
